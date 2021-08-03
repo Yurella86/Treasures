@@ -1,0 +1,126 @@
+.wrapper-item {
+    position: absolute;
+    max-width: 1366px;
+    left: 0;
+    right: 0;
+    display: block;
+    height: max-content;
+    background-color: #e5e5e52a;
+    z-index: 200;
+    .content {
+        display: flex;
+        margin: 20px 111px;
+        text-align: center;
+        .image {
+            width: 659px;
+            height: 524px;
+            object-fit: fill;
+        }
+        .description {
+            max-width: 100%;
+            padding: 0 20px;
+            .name-item {
+                width: 465px;
+                min-height: max-content;
+                margin: 0 auto;
+                font-size: 32px;
+                font-weight: 500;
+                vertical-align: middle;
+            }
+            .length-and-prise {
+                margin-top: 38px;
+                text-align: start;
+                h4 {
+                    width: 194px;
+                    height: 27px;
+                    margin-bottom: 0;
+                }
+                select {
+                    width: 293px;
+                    height: 48px;
+                    margin-top: 8px;
+                    padding: 10px;
+                    border-radius: 5px;
+                }
+                .prise {
+                    height: 46px;
+                    margin-top: 18px;
+                    color: #cc0000;
+                    font-size: 36px;
+                    font-weight: 700;
+                    position: relative;
+                    span {
+                        position: absolute;
+                        font-size: 12px;
+                        color: rgb(114, 114, 114);
+                        padding: 10px 15px;
+                    }
+                }
+                .prise-not-sale {
+                    display: none;
+                    text-decoration: line-through;
+                    &.true {
+                        display: block;
+                    }
+                }
+            }
+            .add-to-cart {
+                width: 100%;
+                height: 50px;
+                margin: 34px 0;
+                display: flex;
+                justify-content: space-between;
+                .count {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 149px;
+                    height: 48px;
+                    border: 1px solid #d8d8d8;
+                    border-radius: 4px;
+                    text-align: center;
+                    line-height: 45px;
+                    background-color: white;
+                    .subtract {
+                        flex: 0 1 44px;
+                        max-width: 44px;
+                        &:active {
+                            box-shadow: inset 0 0 0px 3px #d8d8d8;
+                        }
+                    }
+                    .count-number {
+                        width: 63px;
+                        outline: 3px solid #d8d8d8;
+                    }
+                    .add {
+                        flex: 0 1 44px;
+                        max-width: 44px;
+                        &:active {
+                            box-shadow: inset 0 0 0px 3px #d8d8d8;
+                        }
+                    }
+                }
+                button {
+                    width: 262px;
+                    height: 48px;
+                    color: white;
+                    border: none;
+                    border-radius: 5px;
+                    font-size: 16px;
+                    font-weight: 700;
+                    background-color: #cc0000;
+                    &:active {
+                        transform: scale(0.98, 0.98);
+                    }
+                }
+            }
+            .title {
+                width: 465px;
+                height: 157px;
+                font-size: 14px;
+                text-align: start;
+                line-height: 22px;
+                margin-bottom: 0px;
+            }
+        }
+    }
+}

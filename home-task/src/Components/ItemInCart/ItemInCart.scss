@@ -1,0 +1,101 @@
+.wrapper-curt-item {
+    width: 100%;
+    min-height: 178px;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.397);
+    margin-bottom: 3px;
+    .curt-item {
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        margin: 18px;
+        .curt-item-image {
+            margin-right: 16px;
+            border-radius: 30px;
+            img {
+                width: 64px;
+                height: 64px;
+                border-radius: 30px;
+                object-fit: cover;
+            }
+        }
+        .curt-item-description {
+            margin: 5px 0px;
+            font-size: 16px;
+            font-weight: 700;
+            .description {
+            }
+            .prise {
+                margin-top: 20px;
+                color: red;
+                span {
+                    padding-left: 10px;
+                    text-decoration: line-through;
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: gray;
+                    &.false {
+                        display: none;
+                    }
+                }
+            }
+            .quantity {
+                display: flex;
+                width: 125px;
+                height: 32px;
+                margin: 16px;
+                margin-left: 0;
+                border: 1px solid #d8d8d8;
+                border-radius: 4px;
+                .subtract,
+                .add {
+                    width: 32px;
+                    text-align: center;
+                    cursor: pointer;
+                    padding-top: 3px;
+                    &:active {
+                        box-shadow: inset 0px 0px 0 1px #d8d8d8;
+                    }
+                }
+                .count-number {
+                    width: 61px;
+                    border: 1px solid #d8d8d8;
+                    border-left: no;
+                    text-align: center;
+                    padding-top: 3px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .wrapper {
+        .header {
+            .header-wrapper {
+                .logo {
+                    margin-left: 20px;
+                }
+                .nav-box {
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 990px) {
+    .wrapper {
+        .header {
+            .header-wrapper {
+                .burger {
+                    display: block;
+                }
+                .nav-box {
+                    display: none;
+                }
+                .curt {
+                    display: block;
+                }
+            }
+        }
+    }
+}
